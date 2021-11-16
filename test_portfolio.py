@@ -17,7 +17,7 @@ p.buy("HPQ", 100, 36.15)
 print(f"With 100 HPQ @ 36.15: {p.cost()}, should be 21263.0")
 """
 
-
+# problem here: don't know what is wrong with my answer, and if the first one wrong, the other will fail as well
 p = Portfolio()
 print(f"Empty portfolio cost: {p.cost()}, should be 0.0")
 assert p.cost() == 0.0
@@ -27,3 +27,4 @@ assert p.cost() == 17648.0
 p.buy("HPQ", 100, 36.15)
 print(f"With 100 HPQ @ 36.15: {p.cost()}, should be 21263.0")
 assert p.cost() == 21263.0
+
