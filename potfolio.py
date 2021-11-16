@@ -20,18 +20,18 @@ You may do so by any means convenient to you.
 Commit this file to your repository and push it to GitHub using GitHub Desktop, with a suitable commit message.
 """
 
-Class Portfolio:
+class Portfolio:
+    def _init_(self):
+        self._portfolio = list()
 
-    portfolio =list()
-    def buy(name=str, shares=int, price=float):
+    def buy(self, name, shares, price):
+        self._portfolio.append((name, shares, price))
 
-        portfolio.append((name, shares, price))
-
-    def cost():
+    def cost(self):
         total_cost=0.0
-        for i in range(len(portfolio)):
-            total_cost += portfolio[i][1]*portfolio[i][2]
-
-        return total_cost
+        return sum (shares*price for_, shares, price in self._porfolio)
+        #for i in range(len(self._portfolio)):
+        #  total_cost += portfolio[i][1]*portfolio[i][2]
+        #return total_cost
 
 
